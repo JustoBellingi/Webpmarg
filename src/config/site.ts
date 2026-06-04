@@ -2,7 +2,7 @@
 // CONFIGURACIÓN CENTRAL DEL SITIO — editá aquí sin tocar el markup
 // ============================================================
 
-export const WHATSAPP_NUMBER = "5492210000000"; // sin + ni espacios
+export const WHATSAPP_NUMBER = "5492216900406"; // sin + ni espacios
 export const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola! Me interesa crear la web de mi negocio con WEBPMARG."
 );
