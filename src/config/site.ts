@@ -10,25 +10,19 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_ME
 
 export const SITE_NAME = "WEBPMARG";
 export const SITE_DESCRIPTION =
-  "Páginas web simples, rápidas y a precio justo para comercios chicos y medianos. Entrega en 7 a 14 días.";
+  "Páginas web simples, rápidas y a precio justo para comercios chicos y medianos.";
 export const SITE_URL = "https://www.webpmarg.com.ar";
-
-export const HIGHLIGHTS = [
-  "Lista en 7 a 14 días",
-  "Pensada para el celular",
-  "Soporte después de publicar",
-];
 
 export const SERVICES = [
   {
     icon: "layout",
     title: "Sitio web",
-    description: "Qué hacés, dónde estás y cómo contactarte. Claro y al grano.",
+    description: "Qué hacés, dónde estás y cómo contactarte.",
   },
   {
     icon: "shop",
     title: "Tienda online",
-    description: "Vendé con carrito y Mercado Pago, y manejá tu stock.",
+    description: "Tus productos a la vista para vender las 24 horas.",
   },
   {
     icon: "search",
@@ -53,7 +47,11 @@ export const PROCESS_STEPS = [
   },
   {
     title: "Publicamos",
-    description: "Tu web queda online y te acompañamos con el soporte.",
+    description: "Tu web queda online, lista para recibir clientes.",
+  },
+  {
+    title: "Concretamos el pago",
+    description: "Con todo aprobado, se concreta el pago y la web es tuya.",
   },
 ];
 
@@ -62,45 +60,15 @@ export const PLANS = [
     name: "Básico",
     description: "Para empezar a estar online.",
     highlight: false,
-    features: [
-      "Hasta 5 secciones",
-      "Botón de WhatsApp y formulario",
-      "SEO básico",
-      "Entrega en 7 días",
-      "1 mes de soporte",
-    ],
+    features: ["Hasta 5 secciones", "Botón de WhatsApp y formulario", "SEO básico"],
   },
   {
     name: "Profesional",
     description: "Para destacar y conseguir más clientes.",
     highlight: true,
-    features: [
-      "Hasta 10 secciones",
-      "Diseño personalizado",
-      "SEO avanzado + Google Analytics",
-      "Entrega en 10 días",
-      "3 meses de soporte",
-    ],
-  },
-  {
-    name: "Tienda",
-    description: "Para vender online sin límites.",
-    highlight: false,
-    features: [
-      "Todo lo del plan Profesional",
-      "Tienda con Mercado Pago",
-      "Panel para gestionar stock y pedidos",
-      "Entrega en 14 días",
-      "6 meses de soporte",
-    ],
+    features: ["Hasta 10 secciones", "Diseño personalizado", "SEO avanzado + Google Analytics"],
   },
 ];
-
-export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/webpmarg",
-  facebook: "https://facebook.com/webpmarg",
-  linkedin: "https://linkedin.com/company/webpmarg",
-};
 
 export const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
