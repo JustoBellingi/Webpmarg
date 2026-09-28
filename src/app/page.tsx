@@ -1,8 +1,6 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
-import AboutUs from "@/components/sections/AboutUs";
 import Services from "@/components/sections/Services";
-import WhyUs from "@/components/sections/WhyUs";
 import Process from "@/components/sections/Process";
 import Plans from "@/components/sections/Plans";
 import FinalCTA from "@/components/sections/FinalCTA";
@@ -15,9 +13,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <AboutUs />
         <Services />
-        <WhyUs />
         <Process />
         <Plans />
         <FinalCTA />
