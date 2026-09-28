@@ -8,39 +8,43 @@ function planWhatsAppUrl(planName: string) {
 
 export default function Plans() {
   return (
-    <section id="planes" className="section-padding">
-      <div className="container-custom">
+    <section id="planes" className="section-padding relative overflow-hidden bg-secondary text-white">
+      <div className="absolute inset-0 bg-dots" aria-hidden="true" />
+
+      <div className="container-custom relative">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Planes</h2>
-          <p className="text-muted-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Planes</h2>
+          <p className="text-white/60">
             El precio depende de lo que necesites. Consultanos y te pasamos un presupuesto sin cargo.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5 items-start">
+        <div className="grid md:grid-cols-2 gap-6">
           {PLANS.map((plan) => (
             <article
               key={plan.name}
-              className={`relative rounded-2xl p-7 flex flex-col ${
-                plan.highlight ? "bg-secondary text-secondary-foreground" : "border bg-card"
+              className={`relative rounded-2xl p-8 flex flex-col ${
+                plan.highlight
+                  ? "bg-gradient-to-br from-primary to-indigo-600 shadow-2xl shadow-primary/30"
+                  : "bg-white/5 ring-1 ring-white/10"
               }`}
             >
               {plan.highlight && (
-                <span className="absolute top-7 right-7 px-2.5 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
+                <span className="absolute top-8 right-8 px-2.5 py-1 rounded-full bg-white text-primary text-xs font-semibold">
                   Más elegido
                 </span>
               )}
 
-              <h3 className="text-xl font-bold mb-1">{plan.name}</h3>
-              <p className={`text-sm mb-6 ${plan.highlight ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>
+              <h3 className="text-2xl font-bold mb-1">{plan.name}</h3>
+              <p className={`text-sm mb-8 ${plan.highlight ? "text-white/80" : "text-white/60"}`}>
                 {plan.description}
               </p>
 
-              <ul className="space-y-3 mb-8 text-sm">
+              <ul className="space-y-3 mb-10">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex gap-3">
                     <Check
-                      className={`w-4 h-4 mt-0.5 shrink-0 ${plan.highlight ? "text-blue-300" : "text-primary"}`}
+                      className={`w-5 h-5 shrink-0 ${plan.highlight ? "text-white" : "text-blue-400"}`}
                       aria-hidden="true"
                     />
                     {feature}
@@ -52,10 +56,10 @@ export default function Plans() {
                 href={planWhatsAppUrl(plan.name)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-auto text-center py-3 rounded-lg font-semibold text-sm transition-colors ${
+                className={`mt-auto text-center py-3 rounded-lg font-semibold transition-colors ${
                   plan.highlight
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "border hover:bg-muted"
+                    ? "bg-white text-primary hover:bg-white/90"
+                    : "bg-white/10 hover:bg-white/15"
                 }`}
               >
                 Consultar

@@ -1,13 +1,14 @@
 import { SITE_NAME } from "@/config/site";
 
+// Pensado para fondos oscuros (navbar y footer)
 export function Logo() {
   return (
     <a href="#inicio" className="flex items-center gap-2" aria-label={`${SITE_NAME} - Inicio`}>
-      <span className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
+      <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-indigo-500 text-white flex items-center justify-center font-display font-bold text-sm shadow-lg shadow-primary/30">
         W
       </span>
-      <span className="font-bold text-lg tracking-tight">
-        WEB<span className="text-primary">PMARG</span>
+      <span className="font-display font-bold text-lg tracking-tight text-white">
+        WEB<span className="text-blue-400">PMARG</span>
       </span>
     </a>
   );

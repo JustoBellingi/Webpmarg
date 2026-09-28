@@ -4,25 +4,26 @@
 
 @layer base {
   :root {
-    --background: 40 20% 98%;
-    --foreground: 222 47% 11%;
+    --background: 220 33% 96%;
+    --foreground: 224 45% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 224 45% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 221 83% 45%;
+    --popover-foreground: 224 45% 11%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 222 47% 11%;
-    --secondary-foreground: 40 20% 98%;
-    --muted: 40 12% 94%;
-    --muted-foreground: 220 9% 40%;
-    --accent: 221 83% 96%;
-    --accent-foreground: 221 83% 40%;
+    /* Azul noche: fondo de las secciones oscuras (hero, planes, footer) */
+    --secondary: 225 52% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 25% 92%;
+    --muted-foreground: 220 12% 40%;
+    --accent: 221 90% 95%;
+    --accent-foreground: 221 83% 45%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 89%;
-    --input: 220 13% 89%;
-    --ring: 221 83% 45%;
+    --border: 220 18% 87%;
+    --input: 220 18% 87%;
+    --ring: 221 83% 53%;
     --radius: 0.75rem;
   }
 
@@ -44,6 +45,23 @@
     @apply bg-background text-foreground antialiased;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    /* Plus Jakarta tiene el espacio entre palabras muy angosto: lo compensamos */
+    word-spacing: 0.1em;
+  }
+
+  h1,
+  h2 {
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    @apply bg-primary/25;
+  }
+
   /* Deja lugar para el navbar fijo al saltar a una sección con #ancla */
   section[id] {
     @apply scroll-mt-16;
@@ -61,5 +79,18 @@
 
   .section-padding {
     @apply py-20 md:py-28;
+  }
+
+  /* Trama de puntos sutil para fondos oscuros o de color */
+  .bg-dots {
+    background-image: radial-gradient(rgb(255 255 255 / 0.09) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Resplandor azul detrás del contenido del hero */
+  .bg-glow {
+    background-image:
+      radial-gradient(50% 60% at 75% 35%, hsl(var(--primary) / 0.35), transparent 70%),
+      radial-gradient(40% 50% at 10% 90%, rgb(99 102 241 / 0.18), transparent 70%);
   }
 }
