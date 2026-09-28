@@ -4,16 +4,17 @@ import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/config/site";
 
 const inter = Inter({
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
 });
+
+const TITLE = `${SITE_NAME} — Páginas web para comercios`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Páginas Web para Comercios`,
+    default: TITLE,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -33,13 +34,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_AR",
     url: SITE_URL,
-    title: `${SITE_NAME} — Páginas Web para Comercios`,
+    title: TITLE,
     description: SITE_DESCRIPTION,
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Páginas Web para Comercios`,
+    title: TITLE,
     description: SITE_DESCRIPTION,
   },
   robots: {
@@ -55,8 +56,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={inter.variable} suppressHydrationWarning>
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="es" className={inter.variable}>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }

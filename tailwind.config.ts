@@ -43,6 +43,7 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        whatsapp: "#25D366",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -50,39 +51,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
-      },
-      animation: {
-        "fade-up": "fadeUp 0.6s ease forwards",
-        "float": "float 6s ease-in-out infinite",
-        "pulse-slow": "pulse 4s ease-in-out infinite",
-        "gradient-x": "gradientX 8s ease infinite",
-      },
-      keyframes: {
-        fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-12px)" },
-        },
-        gradientX: {
-          "0%, 100%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-        },
-      },
-      backgroundImage: {
-        "grid-pattern":
-          "linear-gradient(rgba(59,130,246,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.05) 1px, transparent 1px)",
-        "hero-glow":
-          "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59,130,246,0.3), transparent)",
-        "card-glow":
-          "radial-gradient(circle at 50% 0%, rgba(59,130,246,0.1), transparent 70%)",
-      },
-      backgroundSize: {
-        "grid": "60px 60px",
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
     },
   },
