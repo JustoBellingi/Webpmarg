@@ -3,7 +3,7 @@ import { WhatsAppIcon } from "@/components/brand";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden bg-secondary text-white pt-32 pb-24 md:pt-40 md:pb-32">
+    <section id="inicio" className="relative overflow-hidden bg-secondary text-white pt-28 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
       <div className="absolute inset-0 bg-dots" aria-hidden="true" />
       <div className="absolute inset-0 bg-glow" aria-hidden="true" />
 
@@ -22,7 +22,7 @@ export default function Hero() {
             .
           </h1>
 
-          <p className="text-lg text-white/65 max-w-md mb-10">
+          <p className="text-lg text-white/65 max-w-md mb-8 sm:mb-10">
             Páginas web simples, rápidas y a precio justo para negocios chicos y medianos.
           </p>
 

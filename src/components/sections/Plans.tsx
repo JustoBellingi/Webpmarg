@@ -12,7 +12,7 @@ export default function Plans() {
       <div className="absolute inset-0 bg-dots" aria-hidden="true" />
 
       <div className="container-custom relative">
-        <div className="mb-12">
+        <div className="mb-8 sm:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">Planes</h2>
           <p className="text-white/60">
             El precio depende de lo que necesites. Consultanos y te pasamos un presupuesto sin cargo.
@@ -23,14 +23,14 @@ export default function Plans() {
           {PLANS.map((plan) => (
             <article
               key={plan.name}
-              className={`relative rounded-2xl p-8 flex flex-col ${
+              className={`relative rounded-2xl p-6 sm:p-8 flex flex-col ${
                 plan.highlight
                   ? "bg-gradient-to-br from-primary to-indigo-600 shadow-2xl shadow-primary/30"
                   : "bg-white/5 ring-1 ring-white/10"
               }`}
             >
               {plan.highlight && (
-                <span className="absolute top-8 right-8 px-2.5 py-1 rounded-full bg-white text-primary text-xs font-semibold">
+                <span className="absolute top-6 right-6 sm:top-8 sm:right-8 px-2.5 py-1 rounded-full bg-white text-primary text-xs font-semibold">
                   Más elegido
                 </span>
               )}

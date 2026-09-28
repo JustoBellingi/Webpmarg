@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  // En pantallas táctiles el :hover queda "pegado" después de tocar; así solo aplica con mouse
+  future: { hoverOnlyWhenSupported: true },
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
