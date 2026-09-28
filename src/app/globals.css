@@ -78,7 +78,7 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-14 sm:py-20 md:py-28;
   }
 
   /* Trama de puntos sutil para fondos oscuros o de color */

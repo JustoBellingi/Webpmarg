@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/config/site";
@@ -17,6 +17,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 const TITLE = `${SITE_NAME} — Páginas web para comercios`;
+
+export const viewport: Viewport = {
+  themeColor: "#0a0f1e", // mismo azul noche que --secondary
+  viewportFit: "cover", // habilita env(safe-area-inset-*) en iPhone
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

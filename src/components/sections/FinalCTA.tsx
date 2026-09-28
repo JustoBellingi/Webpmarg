@@ -5,7 +5,7 @@ export default function FinalCTA() {
   return (
     <section id="contacto" className="section-padding">
       <div className="container-custom">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-indigo-600 text-white px-6 py-14 md:py-20 text-center shadow-2xl shadow-primary/25">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-indigo-600 text-white px-6 py-12 md:py-20 text-center shadow-2xl shadow-primary/25">
           <div className="absolute inset-0 bg-dots" aria-hidden="true" />
 
           <div className="relative">
