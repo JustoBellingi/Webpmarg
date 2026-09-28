@@ -11,7 +11,7 @@ export default function Hero() {
         <div>
           <p className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full border border-white/15 bg-white/5 text-sm text-blue-200">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400" aria-hidden="true" />
-            Diseño web para comercios · La Plata
+            Diseño web para comercios
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] text-balance mb-6">
