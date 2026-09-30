@@ -42,14 +42,14 @@ export const PROJECTS = [
     name: "Hotel Nora",
     category: "Hotelería",
     url: "https://www.hotelnora.com.ar/",
-    image: null,
+    image: "/trabajos/hotel-nora.jpg",
     colors: "from-amber-500 to-rose-600",
   },
   {
-    name: "Andyna Cabaña",
+    name: "La Andyna",
     category: "Turismo",
     url: "https://andyna-cabana.vercel.app/",
-    image: null,
+    image: "/trabajos/andyna.jpg",
     colors: "from-emerald-500 to-teal-700",
   },
   {
