@@ -36,6 +36,31 @@ export const SERVICES = [
   },
 ] as const;
 
+// `image` es una captura en /public/trabajos. Si no hay, se muestra una portada con `colors`
+export const PROJECTS = [
+  {
+    name: "Hotel Nora",
+    category: "Hotelería",
+    url: "https://www.hotelnora.com.ar/",
+    image: null,
+    colors: "from-amber-500 to-rose-600",
+  },
+  {
+    name: "Andyna Cabaña",
+    category: "Turismo",
+    url: "https://andyna-cabana.vercel.app/",
+    image: null,
+    colors: "from-emerald-500 to-teal-700",
+  },
+  {
+    name: "OPC",
+    category: "Industria",
+    url: "https://www.opcweb.com.ar/",
+    image: "/trabajos/opc.jpg",
+    colors: "from-red-500 to-zinc-800",
+  },
+];
+
 export const PROCESS_STEPS = [
   {
     title: "Charlamos",
@@ -72,6 +97,7 @@ export const PLANS = [
 
 export const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
+  { label: "Trabajos", href: "#trabajos" },
   { label: "Cómo trabajamos", href: "#proceso" },
   { label: "Planes", href: "#planes" },
 ];

@@ -8,7 +8,7 @@ const CONNECTOR =
 
 export default function Process() {
   return (
-    <section id="proceso" className="section-padding bg-card border-y">
+    <section id="proceso" className="section-padding">
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 sm:mb-14">Cómo trabajamos</h2>
 
