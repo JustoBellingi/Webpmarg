@@ -48,7 +48,7 @@ export const PROJECTS = [
   {
     name: "La Andyna",
     category: "Turismo",
-    url: "https://andyna-cabana.vercel.app/",
+    url: "https://www.laandyna.com.ar/",
     image: "/trabajos/andyna.jpg",
     colors: "from-emerald-500 to-teal-700",
   },
