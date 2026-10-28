@@ -64,10 +64,6 @@ export default function Hero() {
             ))}
           </ul>
 
-          <p className="mt-10 pt-6 border-t border-white/10 text-sm text-white/50">
-            Ya confían en nosotros:{" "}
-            <span className="text-white/85 font-medium">{PROJECTS.map((p) => p.name).join(" · ")}</span>
-          </p>
         </div>
 
         <Showcase />
