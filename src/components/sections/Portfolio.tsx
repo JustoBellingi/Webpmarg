@@ -15,7 +15,7 @@ export default function Portfolio() {
         </div>
 
         {/* En celular es un carrusel horizontal con snap; desde sm, grilla */}
-        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 pb-4 sm:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 pb-4 sm:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {PROJECTS.map((project) => {
             const domain = new URL(project.url).hostname.replace(/^www\./, "");
             return (
@@ -41,7 +41,7 @@ export default function Portfolio() {
                       src={project.image}
                       alt={`Captura del sitio de ${project.name}`}
                       fill
-                      sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
+                      sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
                       className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
