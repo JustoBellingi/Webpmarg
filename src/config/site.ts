@@ -53,6 +53,13 @@ export const PROJECTS = [
     colors: "from-emerald-500 to-teal-700",
   },
   {
+    name: "Cabañas Las Juanas",
+    category: "Alojamiento",
+    url: "https://caba-alasjuanas.vercel.app/",
+    image: "/trabajos/las-juanas.jpg",
+    colors: "from-orange-600 to-amber-800",
+  },
+  {
     name: "OPC",
     category: "Industria",
     url: "https://www.opcweb.com.ar/",
